@@ -8,6 +8,7 @@ namespace Lab01_numbers_game
         {
             // this method runs StartSequence and catches general errors
 
+
             string appName = "Numbers Game";
             string appVersion = "1.0.0";
             string appAuthor = "Jason Burns";

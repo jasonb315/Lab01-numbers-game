@@ -44,6 +44,23 @@ namespace Lab01_numbers_game
 
             int product = 0;
             product = GetProduct(intArr, sum);
+
+            decimal quotient = 0;
+            quotient = GetQuotient(product);
+
+            Console.WriteLine($"your array size is {intArr.Length}");
+
+            Console.Write("The numbers of your array are ");
+            foreach (var item in intArr)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine(" ");
+            Console.WriteLine($"The sum of the array is {sum}");
+
+            Console.WriteLine($"{sum} * {product / sum} = {product}");
+            Console.WriteLine($"{product} / {product/quotient} = {quotient}");
+
         }
 
         static int[] Populate(int[] intArr)
@@ -84,21 +101,36 @@ namespace Lab01_numbers_game
 
             string inputStr = Console.ReadLine();
             int inputVal;
-            inputVal = Convert.ToInt32(inputStr);
+            inputVal = (Convert.ToInt32(inputStr)-1);
 
             int product = intArr[inputVal] * sum;
 
             return product;
         }
 
-        static void GetQuotient(int product)
+        static decimal GetQuotient(int product)
         {
-            //Console.WriteLine("Please enter a number to divide your product {0} by", product);
-            //string inputStr = Console.ReadLine();
-            //int inputVal;
-            //inputVal = Convert.ToInt32(inputStr);
 
-            
+            Console.WriteLine("Please enter a number to divide your product {0} by", product);
+
+            decimal decProduct = Convert.ToDecimal(product);
+
+            string inputStr = Console.ReadLine();
+            decimal inputVal;
+            inputVal = Convert.ToInt32(inputStr);
+            decimal quotient = 0;
+
+            try
+            {
+                quotient = decimal.Divide(decProduct, inputVal);
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.Write(e.Message);
+            }
+  
+            return quotient;
 
         }
+    }
 }

@@ -8,3 +8,4 @@ C:\Users\Jason\source\repos\Lab01-numbers-game2\Lab01-numbers-game\obj\Debug\net
 C:\Users\Jason\source\repos\Lab01-numbers-game2\Lab01-numbers-game\obj\Debug\netcoreapp2.1\Lab01-numbers-game.AssemblyInfo.cs
 C:\Users\Jason\source\repos\Lab01-numbers-game2\Lab01-numbers-game\obj\Debug\netcoreapp2.1\Lab01-numbers-game.dll
 C:\Users\Jason\source\repos\Lab01-numbers-game2\Lab01-numbers-game\obj\Debug\netcoreapp2.1\Lab01-numbers-game.pdb
+C:\Users\Jason\source\repos\Lab01-numbers-game2\Lab01-numbers-game\obj\Debug\netcoreapp2.1\Lab01-numbers-game.csprojAssemblyReference.cache

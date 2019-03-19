@@ -46,14 +46,17 @@ namespace Lab01_numbers_game
                 inputVal = Convert.ToInt32(inputStr);
                 intArr[i] = inputVal;
 
-                GetSum();
+                GetSum(intArr);
             }
 
         }
-        static void GetSum()
+        static void GetSum(int[] intArr)
         {
-
-        }
+            int sum = 0;
+            for (int i = 0; i < intArr.Length; i++)
+            {
+                sum += intArr[i];
+            }
 
         static void GetProduct()
         {

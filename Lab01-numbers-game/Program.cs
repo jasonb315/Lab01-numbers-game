@@ -57,11 +57,17 @@ namespace Lab01_numbers_game
             {
                 sum += intArr[i];
             }
+            GetProduct(intArr, sum);
 
-        static void GetProduct()
+        static void GetProduct(int[] intArr, int sum)
         {
+                Console.WriteLine("Please select a random number between 1 and {0}", intArr.Length);
+                string inputStr = Console.ReadLine();
+                int inputVal;
+                inputVal = Convert.ToInt32(inputStr);
+                int product = intArr[inputVal] * sum;
 
-        }
+            }
 
         static void GetQuotient()
         {

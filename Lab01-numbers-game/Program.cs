@@ -28,29 +28,35 @@ namespace Lab01_numbers_game
 
         static void StartSequence()
         {
-            //Console.WriteLine("Enter a number greater than zero");
-            //string inputStr = Console.ReadLine();
-            //int inputVal;
-            //inputVal = Convert.ToInt32(inputStr);
+            //get a number
+            Console.WriteLine("Enter a number greater than zero");
+            string inputStr = Console.ReadLine();
+            int inputVal;
+            inputVal = Convert.ToInt32(inputStr);
 
-            //int[] intArr = new int[inputVal];
+            //int arr instance
+            int[] intArr = new int[inputVal];
+            //populate
+            intArr = Populate(intArr);
 
-            //int[] population = Populate(intArr);
-            //int sum = GetSum(population);
+            int sum = 0;
+            sum = GetSum(intArr);
         }
 
         static int[] Populate(int[] intArr)
         {
 
-            //for (int i = 0 ; i < intArr.Length ; i ++){
-            //    Console.Write("Please enter number {0} of {1}:", i + 1, intArr.Length);
-            //    string inputStr = Console.ReadLine();
-            //    int inputVal;
-            //    inputVal = Convert.ToInt32(inputStr);
-            //    intArr[i] = inputVal;
+            for (int i = 0; i < intArr.Length; i++)
+            {
+                Console.Write("Please enter number {0} of {1}:", i + 1, intArr.Length);
+                string inputStr = Console.ReadLine();
+                int inputVal;
+                inputVal = Convert.ToInt32(inputStr);
+                intArr[i] = inputVal;
 
-            //    return intArr;
-            //}
+            }
+
+            return intArr;
 
         }
         static void GetSum(int[] intArr)

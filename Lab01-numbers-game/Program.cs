@@ -28,7 +28,12 @@ namespace Lab01_numbers_game
 
         static void StartSequence()
         {
-
+            Console.WriteLine("Enter a number greater than zero");
+            string inputStr = Console.ReadLine();
+            int inputVal;
+            inputVal = Convert.ToInt32(inputStr);
+            int[] intArr = new int[inputVal];
+            Populate(intArr);
         }
 
         static void Populate(int[] intArr)

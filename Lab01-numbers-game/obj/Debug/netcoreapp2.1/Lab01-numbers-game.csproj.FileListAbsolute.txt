@@ -1,0 +1,10 @@
+C:\Users\Jason\source\repos\Lab01-numbers-game2\Lab01-numbers-game\bin\Debug\netcoreapp2.1\Lab01-numbers-game.deps.json
+C:\Users\Jason\source\repos\Lab01-numbers-game2\Lab01-numbers-game\bin\Debug\netcoreapp2.1\Lab01-numbers-game.runtimeconfig.json
+C:\Users\Jason\source\repos\Lab01-numbers-game2\Lab01-numbers-game\bin\Debug\netcoreapp2.1\Lab01-numbers-game.runtimeconfig.dev.json
+C:\Users\Jason\source\repos\Lab01-numbers-game2\Lab01-numbers-game\bin\Debug\netcoreapp2.1\Lab01-numbers-game.dll
+C:\Users\Jason\source\repos\Lab01-numbers-game2\Lab01-numbers-game\bin\Debug\netcoreapp2.1\Lab01-numbers-game.pdb
+C:\Users\Jason\source\repos\Lab01-numbers-game2\Lab01-numbers-game\obj\Debug\netcoreapp2.1\Lab01-numbers-game.csproj.CoreCompileInputs.cache
+C:\Users\Jason\source\repos\Lab01-numbers-game2\Lab01-numbers-game\obj\Debug\netcoreapp2.1\Lab01-numbers-game.AssemblyInfoInputs.cache
+C:\Users\Jason\source\repos\Lab01-numbers-game2\Lab01-numbers-game\obj\Debug\netcoreapp2.1\Lab01-numbers-game.AssemblyInfo.cs
+C:\Users\Jason\source\repos\Lab01-numbers-game2\Lab01-numbers-game\obj\Debug\netcoreapp2.1\Lab01-numbers-game.dll
+C:\Users\Jason\source\repos\Lab01-numbers-game2\Lab01-numbers-game\obj\Debug\netcoreapp2.1\Lab01-numbers-game.pdb

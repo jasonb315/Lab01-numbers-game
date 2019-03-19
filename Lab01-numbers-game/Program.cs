@@ -6,10 +6,13 @@ namespace Lab01_numbers_game
     {
         static void Main(string[] args)
         {
+            // this method runs StartSequence and catches general errors
+
             string appName = "Numbers Game";
             string appVersion = "1.0.0";
             string appAuthor = "Jason Burns";
             Console.WriteLine("{0}: Version {1} by {2}", appName, appVersion, appAuthor);
+            Console.ForegroundColor = ConsoleColor.Green;
 
             try
             {
@@ -28,15 +31,14 @@ namespace Lab01_numbers_game
 
         static void StartSequence()
         {
-            //get a number
+            // this method runs sub methods and stores their output for collected use
+
             Console.WriteLine("Enter a number greater than zero");
             string inputStr = Console.ReadLine();
             int inputVal;
             inputVal = Convert.ToInt32(inputStr);
 
-            //int arr instance
             int[] intArr = new int[inputVal];
-            //populate
             intArr = Populate(intArr);
 
             int sum = 0;
@@ -65,6 +67,7 @@ namespace Lab01_numbers_game
 
         static int[] Populate(int[] intArr)
         {
+            // this method pupulates the user specified int arr with user specified values
 
             for (int i = 0; i < intArr.Length; i++)
             {
@@ -81,6 +84,8 @@ namespace Lab01_numbers_game
         }
         static int GetSum(int[] intArr)
         {
+            // this method returns the sum of the arr values specified by the user
+
             int sum = 0;
 
             for (int i = 0; i < intArr.Length; i++)
@@ -97,6 +102,9 @@ namespace Lab01_numbers_game
 
         static int GetProduct(int[] intArr, int sum)
         {
+            // this method returns the product of the arr values
+            // sumed by a value of an arr index specified by the user at random
+
             Console.WriteLine("Please select a random number between 1 and {0}", intArr.Length);
 
             string inputStr = Console.ReadLine();
@@ -110,6 +118,7 @@ namespace Lab01_numbers_game
 
         static decimal GetQuotient(int product)
         {
+            // this method returns the quotient calaulated by a divisor specified by the user
 
             Console.WriteLine("Please enter a number to divide your product {0} by", product);
 

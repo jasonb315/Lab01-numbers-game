@@ -59,14 +59,21 @@ namespace Lab01_numbers_game
             return intArr;
 
         }
-        static void GetSum(int[] intArr)
+        static int GetSum(int[] intArr)
         {
-            //int sum = 0;
-            //for (int i = 0; i < intArr.Length; i++)
-            //{
-            //    sum += intArr[i];
-            //}
-            //GetProduct(intArr, sum);
+            int sum = 0;
+
+            for (int i = 0; i < intArr.Length; i++)
+            {
+                sum += intArr[i];
+            }
+
+            if (sum < 20)
+            {
+                throw new Exception($"Value of {sum} is too low");
+            }
+            return sum;
+        }
 
         static void GetProduct(int[] intArr, int sum)
         {

@@ -39,7 +39,15 @@ namespace Lab01_numbers_game
         static void Populate(int[] intArr)
         {
 
+            for (int i = 0 ; i < intArr.Length ; i ++){
+                Console.Write("Please enter number {0} of {1}:", i + 1, intArr.Length);
+                string inputStr = Console.ReadLine();
+                int inputVal;
+                inputVal = Convert.ToInt32(inputStr);
+                intArr[i] = inputVal;
 
+                GetSum();
+            }
 
         }
         static void GetSum()
